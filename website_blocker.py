@@ -35,7 +35,7 @@ def Blocker(message):
                 message += website + ': Already Blocked\n'
             else:
                 host_file.write('\n' + ip_address + " " + website)
-                host_file.write(ip_address + " " +
+                host_file.write('\n' + ip_address + " " +
                                 website.replace('www.', ""))
                 message += website + ': Blocked\n'
     messagebox.showinfo("Blocked/Unblocked", message)
